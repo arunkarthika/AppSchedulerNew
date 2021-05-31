@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alarmsListFragment"
+        android:title="@string/menu_dashboard"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/appListFragment"
+        android:title="@string/menu_leaderboard"
+        android:icon="@drawable/ic_mobile_app"/>
+    <item
+        android:id="@+id/scheduleFragment"
+        android:title="@string/menu_create"
+        android:icon="@drawable/ic_baseline_add_alarm_24"/>
+
+
+
+</menu>

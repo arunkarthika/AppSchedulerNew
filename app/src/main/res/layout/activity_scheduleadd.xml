@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#7D2FED"
+            android:padding="10dp"
+            android:layout_weight="1.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Schedule"
+                android:paddingLeft="2dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/phone"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/white"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
+                app:hintAnimationEnabled="true"
+                android:layout_alignParentBottom="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/title"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/white">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule Time"
+                android:paddingLeft="2dp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00 AM"
+                android:textStyle="bold"
+                android:paddingLeft="3dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:paddingLeft="2dp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repeat Mode"
+                android:textSize="16dp"
+                app:buttonTint="@color/purple_700"
+                android:textStyle="bold"
+                android:id="@+id/fragment_createalarm_recurring"
+                />
+
+            <LinearLayout
+                android:id="@+id/fragment_createalarm_recurring_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+              >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mon"
+                        app:buttonTint="@color/purple_700"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkTue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tue"
+                        app:buttonTint="@color/purple_700"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkWed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wed"
+                        app:buttonTint="@color/purple_700" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkThu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thu"
+                        app:buttonTint="@color/purple_700" />
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkFri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fri"
+                        app:buttonTint="@color/purple_700" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/fragment_createalarm_checkSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sat"
+                    app:buttonTint="@color/purple_700" />
+
+                <CheckBox
+                    android:id="@+id/fragment_createalarm_checkSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sun"
+                    app:buttonTint="@color/purple_700" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:id="@+id/add_schedule"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

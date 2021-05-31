@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App Scheduler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">App Scheduler</string>
+    <string name="menu_dashboard">Home</string>
+    <string name="menu_leaderboard">Apps</string>
+    <string name="menu_exit">Exit</string>
+    <string name="phone">Title</string>
+    <string name="menu_create">Add</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
